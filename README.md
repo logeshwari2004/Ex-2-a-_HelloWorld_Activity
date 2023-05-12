@@ -33,21 +33,104 @@ Step 7: Save and run the application.
  ```
 /*
 Program to implement a Hello world Activity using all lifecycles methods using Android Studio .
-Developed by: 
-RegisterNumber:  
+Developed by: LOGESHWARI.P
+RegisterNumber: 212221230055
 */
 ```
 
 ## MainActivity.java:
+```
+package com.example.exno1;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Toast toast=Toast.makeText(getApplicationContext(),"OnCreate Executed",
+        Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    protected void onStart(){
+        super.onStart();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnStart Executed",
+        Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    protected void onResume(){
+        super.onResume();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnResume Executed",
+        Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    protected void onPause(){
+        super.onPause();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnPause Executed",
+        Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    protected void onStop(){
+        super.onStop();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnStop Executed",
+        Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    protected void onRestart(){
+        super.onRestart();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnRestart Executed",
+        Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    protected void onDestroy(){
+        super.onDestroy();
+        Toast toast=Toast.makeText(getApplicationContext(),"OnDestroy Executed",
+        Toast.LENGTH_LONG);
+        toast.show();
+    }
+  ```
 
 
 
 
 ## activity_main.xml:
+```
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.
+android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
 
 ## Output:
 
+![233544571-55f705f6-7542-4b7b-b3b5-505ed07f8c01](https://github.com/logeshwari2004/Ex-2-a-_HelloWorld_Activity/assets/94211349/71ea0881-8c55-45ef-9f2b-98e2d53bd9fb)
 
 
 ## Result:
